@@ -18,11 +18,11 @@ class Venue
     names
   end
 
-  def over_capacity?(name)
-    if @patrons >= @capacity
-      true
-    elsif @patron <= @capacity
+  def over_capacity?
+    if @patrons.length <= @capacity 
       false
+    else
+      true
     end
   end
 end

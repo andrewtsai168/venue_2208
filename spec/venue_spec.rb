@@ -56,7 +56,7 @@ describe Venue do
   # Iteration 3
 
   describe 'iteration 3' do
-    it 'over_capacity' do
+    it 'returns true or false for capacity overages' do
       venue = Venue.new('Bluebird', 4)
       venue.add_patron('Mike')
       venue.add_patron('Megan')
