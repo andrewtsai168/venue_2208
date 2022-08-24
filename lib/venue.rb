@@ -15,6 +15,14 @@ class Venue
     @patrons.each do |patron|
       names << patron.upcase
     end
-    names 
+    names
+  end
+
+  def over_capacity?(name)
+    if @patrons >= @capacity
+      true
+    elsif @patron <= @capacity
+      false
+    end
   end
 end
